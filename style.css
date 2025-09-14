@@ -404,9 +404,10 @@ audio {
   }
 
   audio {
-    position: relative;
+  
     width: 15rem;
-    left: 6rem;
+
+   align-self: auto;
   }
 
   ol.list {
