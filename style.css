@@ -28,7 +28,6 @@ section .logo {
 }
 
 .menu {
-  position: static;
   background-color: #333;
   display: flex;
   justify-content: center;
@@ -43,7 +42,7 @@ section .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-wrap: wrap;
   gap: 0.1rem;
 }
 
@@ -106,6 +105,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
   gap: 5rem;
   background-color: rgb(195, 195, 195);
   padding: 2rem;
@@ -147,9 +147,10 @@ figcaption {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 3rem 0 0 0;
+  flex-wrap: wrap;
+  margin: 5rem 0 0 0;
   box-shadow: 0px 2px 20px 6px rgba(0, 0, 0, 0.51);
-  height: 15rem;
+  height: 30rem;
 }
 
 .list-table h3 {
@@ -326,118 +327,29 @@ a {
   margin: 2rem 0 0 0;
 }
 
-audio {
+section .som {
   position: relative;
-  width: 20rem;
-  right: -8rem;
+  max-width: 70%;
+  margin: 0 auto 4rem;
+}
+
+audio {
+  width: 100%;
+  position: absolute;
 }
 
 /*Mobile reesponsive*/
-@media (max-width: 768px) {
+
+@media only screen and (max-width: 600px) {
   .menu ul {
-    display: block;
-  }
+display: block;
+flex-direction: row;
+}
 
-  section .logo {
-    width: 30%;
-  }
+section .logo {
+ width: 30%;
+ 
+}
 
-  .block-one {
-    flex-direction: column;
-  }
 
-  .photo-img {
-    width: 100%;
-    margin: 0 0 2rem 0;
-  }
-
-  .list-table {
-    flex-direction: column;
-    height: 28rem;
-  }
-
-  .video-block {
-    width: 90%;
-  }
-
-  article {
-    position: relative;
-    right: -1.4rem;
-  }
-
-  .video-1 {
-    width: 100%;
-  }
-
-  .form-section input {
-    width: 13.5rem;
-  }
-
-  .form-section textarea {
-    width: 20rem;
-  }
-
-  th,
-  td {
-    font-size: 0.5rem;
-  }
-
-  h1 {
-    width: 12rem;
-    margin: 2rem auto;
-    font-size: 2rem;
-  }
-
-  .social {
-    margin: 2rem 0 0 0;
-
-    width: 2em;
-    height: rem;
-  }
-
-  .final-text {
-    font-size: 0.8rem;
-    color: black;
-    margin: 1rem 0 0 0;
-  }
-
-  .header-one {
-    width: 13rem;
-    position: relative;
-    right: 1rem;
-  }
-
-  .header-one > h3,
-  h4 {
-    font-size: 0.7rem;
-  }
-
-  .center > h3 {
-    position: relative;
-    left: -6rem;
-  }
-
-  audio {
-    width: 15rem;
-
-    left: 2rem;
-  }
-
-  ol.list {
-    width: 18rem;
-    position: relative;
-    right: 6rem;
-  }
-
-  .table-section {
-    width: 20rem;
-  }
-
-  .center {
-    position: relative;
-    right: -6.5rem;
-  }
-  body {
-    max-width: 100vw;
-  }
 }
