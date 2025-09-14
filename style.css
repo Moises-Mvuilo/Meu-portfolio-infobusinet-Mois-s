@@ -45,7 +45,6 @@ section .logo {
   align-items: center;
   flex-direction: row;
   gap: 0.1rem;
-  
 }
 
 .menu ul li {
@@ -318,13 +317,16 @@ a {
   margin: 2rem 0 0 0;
 }
 
-
+audio {
+  position: relative;
+  width: 20rem;
+  right: -8rem;
+}
 
 /*Mobile reesponsive*/
 @media (max-width: 768px) {
   .menu ul {
     display: block;
-   
   }
 
   section .logo {
@@ -342,8 +344,7 @@ a {
 
   .list-table {
     flex-direction: column;
-    height: 28rem
-    
+    height: 28rem;
   }
 
   .video-block {
@@ -351,7 +352,6 @@ a {
   }
 
   article {
-  
     position: relative;
     right: -1.4rem;
   }
@@ -361,11 +361,11 @@ a {
   }
 
   .form-section input {
-    width: 16rem;
+    width: 13.5rem;
   }
 
   .form-section textarea {
-    width: 22rem;
+    width: 20rem;
   }
 
   th,
@@ -394,22 +394,29 @@ a {
 
   .header-one {
     width: 13rem;
-   
+    position: relative;
+    right: 1rem;
   }
 
-  .header-one > h3, h4 {
-    font-size: .7rem;
+  .header-one > h3,
+  h4 {
+    font-size: 0.7rem;
   }
 
-  audio {position: relative;
+  audio {
+    position: relative;
     width: 15rem;
-    right: -5rem;
+    left: 6rem;
   }
 
   ol.list {
+    width: 18rem;
+    position: relative;
+    right: -1rem;
+  }
 
-  width: 20rem;
-  position: relative;
-  right: -1rem;
-}
+  .table-section {
+    width: 20rem;
+    
+  }
 }
