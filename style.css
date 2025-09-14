@@ -1,0 +1,399 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(40deg, black 10%, blue 50%, black 100%, blue 20%);
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.container {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+section .logo {
+  width: 15%;
+  margin: 0 0 0 2rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.logo-block {
+  background-color: rgb(195, 195, 195);
+}
+
+.menu {
+  position: static;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 0.1rem solid rgb(100, 98, 98);
+}
+
+.menu ul {
+  list-style-type: none;
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.1rem;
+  
+}
+
+.menu ul li {
+  color: white;
+  background-color: #333;
+  width: 11rem;
+  border: 1px solid rgb(100, 98, 98);
+  height: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  float: left;
+  background-color: #090909;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  position: relative;
+  font-weight: bold;
+}
+
+.menu ul li:hover {
+  background-color: #ff6600;
+  cursor: pointer;
+}
+
+.menu ul ul {
+  display: none;
+  margin: 0;
+}
+
+.menu ul li:hover > ul {
+  display: block;
+}
+
+.menu ul ul ul {
+  position: absolute;
+  margin-left: 10.6rem;
+  top: 0;
+}
+
+h1 {
+  text-align: center;
+  background-color: #ff6600;
+  width: 20rem;
+  margin: 3rem auto;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.73);
+}
+
+.block-one {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5rem;
+  background-color: rgb(195, 195, 195);
+  padding: 2rem;
+}
+
+.letter::first-letter {
+  font-size: 2rem;
+  text-decoration: uppercase;
+}
+.principal-text {
+  text-align: justify;
+  width: 100%;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.photo-img {
+  display: block;
+  box-shadow: 0px 1px 3px 1px black;
+  border-radius: 1rem;
+  width: 31.8rem;
+}
+
+.photo-img-1 {
+  border-radius: 1rem;
+  margin: 0;
+  width: 100%;
+}
+
+figcaption {
+  background-color: #ff6600;
+  text-align: center;
+  font-size: 0.8rem;
+  text-shadow: 0px -2px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 1rem;
+}
+
+.list-table {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 3rem 0 0 0;
+  box-shadow: 0px 2px 20px 6px rgba(0, 0, 0, 0.51);
+  height: 15rem;
+}
+
+.list-table h3 {
+  margin: 0 0 1rem 0;
+  text-decoration: underline;
+  text-align: center;
+}
+ol.list {
+  list-style-type: decimal-leading-zero;
+  padding: 0;
+  align-items: center;
+  width: 30rem;
+}
+
+ol.list li {
+  padding: 5px 0;
+}
+
+ol.list li:nth-child(odd) {
+  background-color: black;
+}
+
+ol.list li:nth-child(even) {
+  background-color: #ff6600;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+}
+th {
+  background-color: #000000;
+  text-align: center;
+}
+td {
+  text-align: left;
+}
+td:nth-child(odd) {
+  background-color: black;
+}
+
+td:nth-child(even) {
+  background-color: #ff6600;
+}
+
+.block-one-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-one {
+  text-align: center;
+  background-color: #ff6600;
+  width: 25rem;
+  margin: 1rem auto;
+  text-transform: uppercase;
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.73);
+}
+
+.foot-one {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.video-1 {
+  border-radius: 1rem;
+  margin: 0;
+  width: 31.8rem;
+}
+
+.video-block {
+  width: 31.8rem;
+  border-radius: 1rem;
+}
+
+.form-container {
+  width: 100%;
+  height: 28rem;
+  background: linear-gradient(40deg, black 10%, blue 50%, black 100%, blue 20%);
+  margin: 3rem 0 0 0;
+}
+
+.form-one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+form label {
+  display: block;
+}
+
+input,
+textarea {
+  border: none;
+  border-radius: 0.2rem;
+  box-shadow: 0px 1px 15px 4px rgba(0, 0, 0, 0.3);
+  padding-left: 0.5rem;
+}
+
+input {
+  width: 100%;
+}
+
+.form-section {
+  margin: 0.5rem 0 0 0;
+}
+.form-section input {
+  width: 24rem;
+  height: 2.5rem;
+}
+
+.form-section textarea {
+  width: 35rem;
+  height: 15rem;
+}
+
+input:focus,
+textarea:focus {
+  background-color: rgb(228, 225, 225);
+}
+
+form button {
+  width: 5rem;
+  height: 2rem;
+  font-size: inherit;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  box-shadow: 0px 1px 15px 4px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+  background-color: #ef8a47;
+  transition: all 0.5s ease-in-out;
+  color: white;
+}
+
+.container-foot {
+  margin: 0.5rem 0 0 0;
+  width: 100%;
+  padding-bottom: 2rem;
+  background-color: rgb(164, 164, 164);
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social {
+  margin: 4rem 0 0 0;
+  background-color: transparent;
+  border-radius: 100%;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.final-text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: black;
+  margin: 2rem 0 0 0;
+}
+
+
+
+/*Mobile reesponsive*/
+@media (max-width: 768px) {
+  .menu ul {
+    display: block;
+   
+  }
+
+  section .logo {
+    width: 30%;
+  }
+
+  .block-one {
+    flex-direction: column;
+  }
+
+  .photo-img {
+    width: 100%;
+    margin: 0 0 2rem 0;
+  }
+
+  .list-table {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .video-block {
+    width: 100%;
+  }
+
+  .video-1 {
+    width: 100%;
+  }
+
+  .form-section input {
+    width: 25rem;
+  }
+
+  .form-section textarea {
+    width: 35rem;
+  }
+
+  th,
+  td {
+    font-size: 0.5rem;
+  }
+
+  h1 {
+    width: 12rem;
+    margin: 2rem auto;
+    font-size: 2rem;
+  }
+
+  .social {
+    margin: 2rem 0 0 0;
+
+    width: 2rem;
+    height: rem;
+  }
+
+  .final-text {
+    font-size: 0.8rem;
+    color: black;
+    margin: 1rem 0 0 0;
+  }
+
+  .header-one {
+    width: 25rem;
+  }
+
+  .header-one > h3 {
+    font-size: 1rem;
+  }
+
+  audio {
+    width: 25rem;
+  }
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="img/Logo_PNG_Marca de Água.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    
+    <title>homepage</title>
+
+  </head>
+  <body>
+
+              <!--CABEÇALHO, LOGOTIPO E LISTAS DE MENU-->
+    <header>
+      <section class="logo-block">
+        <img
+          src="img/Logo_PNG_Marca de Água.png"
+          alt="logotipo"
+          class="logo"
+        />
+      </section>
+      <section class="menu">
+        <ul>
+          <li>Home</li>
+          <li>Sobre</li>
+          <li>
+            Serviços
+            <ul>
+              <li>
+                Desenvolvimento Web
+                <ul>
+                  <li>Front</li>
+                  <li>Back</li>
+                  <li>Full</li>
+                </ul>
+              </li>
+              <li>Redes</li>
+              <li>Servidores</li>
+            </ul>
+          </li>
+          <li>Contacto</li>
+        </ul>
+      </section>
+    </header>
+            <!--CONTEÚDO PRINCIPAL-->
+    <main class="container">
+      <h1>Sobre mim</h1>
+      <section class="block-one">
+        <section class="principal-text">
+          <p class="letter">
+            Sou formado em <b>Engenharia Informática</b>. Profissional de TI, sou
+            apaixonado por transformar ideias em experiências digitais
+            atraentes, sempre com foco na usabilidade, acessibilidade e
+            performance com espírito de liderança. Fui atraído pela Informática,
+            pela sua capacidade de fazer acontecer e transformar o mundo de
+            tecnologia em cada segundo.
+          </p>
+          <br />
+
+          <p>
+            Atuar em atividades de projeto, liderança e inovação, impulsionando
+            a transformação digital em diversos setores, tais como: Full Stack
+            Web Development - Rede de Computadores e Gestão de sistemas Windows
+            e Linux - Segurança Electrônica(CCTV)...
+          </p>
+        </section>
+
+        <figure class="photo-img">
+          <img src="img/photo.jpg" alt="foto" class="photo-img-1" />
+          <figcaption>
+            Engº. Matukondele M. Moisés <br />Licenciado em Engenharia
+            Informática
+          </figcaption>
+        </figure>
+      </section>
+              <!--MULTIMÉDIA-->
+      <section class="block-one-2">
+        <article>
+            <header class="header-one">
+                <h3>Video de apresentação da página</h3>
+            </header>
+	  <video src="video/video.webm" class="video-block" controls muted></video>
+      <footer class="foot-one"><span>produzido por mim</span></footer>
+      </article>
+      
+        <section class="header-one"><h4>Ouve música enquanto lê</h4></section>
+      <audio src="audio/promise.mp3" controls muted></audio>
+      
+	</section>
+      </section>
+
+      <!--LISTAS E TABELAS-->
+      <section class="list-table">
+       <section class="center">
+          <h3>SERVIÇOS OFERECIDOS</h3>
+          <ol class="list">
+            <li>Desenvolvimento de páginas Web</li>
+            <li>Rede de computadores</li>
+            <li>Gestão de sistemas Windows server e Linux</li>
+            <li>Segurança electrônica(CCTV)</li>
+          </ol>
+          </section>
+
+          <section class="table-section">
+
+            <h3>PREÇOS DE SERVIÇOS</h3>
+            <table>
+              <thead>
+               <tr> 
+      <th>Nº</th> 
+      <th>Dia</th> 
+      <th>Hora</th> 
+      <th>Serviço</th>
+      <th>Preço</th>
+    </tr> 
+    </thead>
+    <tbody>
+    <tr> 
+      <td>01</td> 
+      <td>Segunda-feira</td> 
+      <td>08:30</td> 
+       <td>Criação de páginas WWeb</td> 
+       <td>Depende do projeto</td> 
+    </tr> 
+    <tr> 
+      <td>02</td> 
+      <td>Terça-feira</td> 
+      <td>08:30</td> 
+       <td>Instalação e configuração de Rede de computadores</td> 
+       <td>Depende do projeto</td> 
+    </tr> 
+    <tr> 
+
+ <td>03</td> 
+<td>Quarta-feira</td> 
+<td>08:30</td> 
+ <td>Instalação de camêras de segurança(CCTV)</td> 
+       <td>Depende do projeto</td> 
+</tr> 
+   <tr> 
+
+ <td>04</td> 
+<td>Quinta-feira</td> 
+<td>08:30</td> 
+ <td>Instalação e configuração de servidor</td> 
+       <td>Depende do projeto</td> 
+</tr> 
+</tbody>
+            </table>
+          </section>
+        
+      </section>
+    </main>
+            <!--FORMULÁRIO-->
+    <section class="form-container">
+        <form id="formulario" action="save.php" method="post" class="form-one"> 
+          <section class="form-section">
+            <label for="nome">Nome:</label> 
+            <input type="text" id="nome" name="nome"  required> 
+            </section>
+            
+            <section class="form-section">
+            <label for="email">Email:</label> 
+            <input type="email" id="email" name="email"  required> 
+            </section>
+
+            <section class="form-section">
+            <label for="mensagem">Mensagem:</label> 
+            <textarea name="mensagem" id="textarea" rows="10" cols="50" maxlength="1024" required></textarea>
+            </section>
+
+            <section class="form-section">
+            <button type="submit" class="btn">Enviar</button> 
+            <button type="reset" class="btn">Limpar</button> 
+            </section>
+            
+        </form>
+    </section>
+                <!--RODAPPÉ-->
+    <footer class="container-foot">
+       <section class="social-button">
+                <a href="https://github.com/Moises-Mvuilo"><button class="social"><img src="img/github.svg" alt="github"></button></a>
+                 <a href="https://www.linkedin.com/in/matukondele-mvuilo-187906329/"><button class="social"><img src="img/linkedin.svg" alt="linkedin" ></button class="social"></a>
+                  <a href="https://www.facebook.com/matukondelemvuilo.moises"><button class="social"><img src="img/facebook.svg" alt="facebook"></button></a>
+                  <a href="mailto:moisesmvuilo@gmail.com"><button class="social"><img src="img/mail.svg" alt="mail"></button></a>
+        </section>
+        
+        <p class="final-text">copyright &#169; by Engº. Matukondele Mvuilo Moisés</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
