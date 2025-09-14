@@ -1,14 +1,9 @@
 # Boa tarde a todos! 🖐️ meu nome é Matukondele Mvuilo Moisés.
 
 # Meu portfólio-infobusinet-Moises
-Criando homepages da minha página www.infobusinet.pt
+## www.infobusinet.pt
 
-
-
-
-### Acabei de fazer este Landing page de Tecnologia de informação para captura de dados das pessoas que pretendem fazer a formação nesta Escola de Formação Profissional remoto ou presencial
-
-## Capturando dados dos formandos via javascript e no servidor online
+### Acabei de criar meu portfólio afim de começar a partilhar os meus serviços oferecidos aos meus clientes
 
 ## Tecnologias utilizadas: HTML, CSS e JAVASCRIPT
 
@@ -17,7 +12,10 @@ Criando homepages da minha página www.infobusinet.pt
 ![JAVASCRIPT](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black)
 
 <div>
-<img src="./assets/image-page.png"></div>
+<img src="./img/print-1.png"></div>
+<img src="./img/print-2.png"></div>
+<img src="./img/print-3.png"></div>
+<img src="./img/print-4.png"></div>
 
 ## Aqui está o link do aplicativo:
 
