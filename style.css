@@ -63,6 +63,15 @@ section .logo {
   font-weight: bold;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  position: relative;
+  font-weight: bold;
+}
+
 .menu ul li:hover {
   background-color: #ff6600;
   cursor: pointer;
@@ -403,11 +412,15 @@ audio {
     font-size: 0.7rem;
   }
 
+  .center > h3 {
+    position: relative;
+    left: -6rem;
+  }
+
   audio {
-  
     width: 15rem;
 
-   left: 2rem;
+    left: 2rem;
   }
 
   ol.list {
@@ -418,6 +431,10 @@ audio {
 
   .table-section {
     width: 20rem;
-    
+  }
+
+  .center {
+    position: relative;
+    right: -6.5rem;
   }
 }
