@@ -1,7 +1,6 @@
-# Boa tarde a todos! 🖐️ meu nome é Matukondele Mvuilo Moisés.
-
-# Meu portfólio-infobusinet-Moises
-## www.infobusinet.pt
+# Boa tarde a pessoal! 🖐️ meu nome é Matukondele Mvuilo Moisés.
+##Sou profissional de Tecnologia de Informação
+# Este é o meu portfólio na qual está na fase do desenvolvimento www.infobusinet.pt
 
 ### Acabei de criar meu portfólio afim de começar a partilhar os meus serviços oferecidos aos meus clientes
 
