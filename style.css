@@ -437,4 +437,7 @@ audio {
     position: relative;
     right: -6.5rem;
   }
+  body {
+    max-width: 100vw;
+  }
 }
