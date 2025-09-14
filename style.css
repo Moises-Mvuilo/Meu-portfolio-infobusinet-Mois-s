@@ -340,7 +340,7 @@ audio {
 
 /*Mobile reesponsive*/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 600px) {
   .menu ul {
 display: block;
 flex-direction: row;
