@@ -359,12 +359,13 @@ a {
   }
 
   input {
-  width: 80%;
+  width: 50%;
 }
 
   textarea {
-    width: 30rem;
+    width: 15rem;
   }
+
 
 
 }
