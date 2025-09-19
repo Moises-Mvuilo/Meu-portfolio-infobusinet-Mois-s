@@ -147,8 +147,11 @@ figcaption {
 /*MULTIMÉDIA*/
 
 .media-container {
+  position: relative;
   max-width: 60%;
   margin: 2rem auto;
+ 
+ 
 }
 
 .media {
@@ -161,20 +164,27 @@ video {
   position: absolute;
   width: 100%;
   border: none;
+  
+
+ 
+  
 }
 
 audio {
   width: 100%;
-  display: block;
+ 
+  margin-top: 1rem;
   margin-top: 1rem;
 }
 
 .media-container h4 {
-  text-align: center;
-  margin: 3rem auto;
+
   background-color: #ff6600;
   width: 20rem;
+  text-align: center;
 }
+
+
 
 /*LISTAS E TABELAS*/
 
@@ -339,7 +349,7 @@ a {
 
 /*Mobile reesponsive*/
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   .menu ul {
     display: block;
     flex-direction: row;
@@ -349,8 +359,12 @@ a {
     width: 30%;
   }
 
+  input {
+  width: 80%;
+}
+
   textarea {
-    width: 50rem;
+    width: 30rem;
   }
 
 
