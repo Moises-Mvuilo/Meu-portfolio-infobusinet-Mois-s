@@ -392,7 +392,7 @@ a {
 
 /*Mobile responsive 600px*/
 
-@media(max-width: 600px) {
+@media(min-width: 600px) {
   .menu ul {
     display: block;
     flex-direction: row;
