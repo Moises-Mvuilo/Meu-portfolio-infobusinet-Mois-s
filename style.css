@@ -5,7 +5,8 @@
 }
 
 body {
- 
+  width: 100vw;
+  height: 100%;
   background: linear-gradient(40deg, black 10%, blue 50%, black 100%, blue 20%);
   color: white;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -61,6 +62,7 @@ section .logo {
   text-transform: uppercase;
   position: relative;
   font-weight: bold;
+  transition: all 0.3s ease-in-out;
 }
 
 a {
@@ -75,6 +77,7 @@ a {
 .menu ul li:hover {
   background-color: #ff6600;
   cursor: pointer;
+  transform: scale(1.2);
 }
 
 .menu ul ul {
@@ -149,8 +152,6 @@ figcaption {
   position: relative;
   max-width: 60%;
   margin: 2rem auto;
- 
- 
 }
 
 .media {
@@ -163,33 +164,26 @@ video {
   position: absolute;
   width: 100%;
   border: none;
-  
-
- 
-  
 }
 
 audio {
   width: 100%;
- 
+
   margin-top: 1rem;
   margin-top: 1rem;
 }
 
 .media-container h4 {
-
   background-color: #ff6600;
   width: 20rem;
   text-align: center;
 }
 
-
-
 /*LISTAS E TABELAS*/
 
 .list-table {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   margin: 5rem 0 0 0;
@@ -346,9 +340,23 @@ a {
   margin: 2rem 0 0 0;
 }
 
-/*Mobile reesponsive*/
+.audio > h4 {
+  position: relative;
+  right: -18rem;
+  text-align: center;
+  margin-top: 3rem;
+}
 
-@media only screen and (min-width: 768px) {
+.media > h4 {
+  position: relative;
+  right: -18rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+/*Mobile responsive*/
+
+@media only screen and (max-width: 768px) {
   .menu ul {
     display: block;
     flex-direction: row;
@@ -359,21 +367,24 @@ a {
   }
 
   input {
-  width: 50%;
-}
+    width: 50%;
+  }
 
   textarea {
     width: 15rem;
   }
 
-.list-table {
-  
-  
-  width: 18rem;
-}
+  .list-table {
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+  }
 
-.table-section {
-width: 18rem;
-}
+  .audio > h4 {
+    right: -3.5rem;
+  }
 
+  .media > h4 {
+    right: -3.5rem;
+  }
 }
