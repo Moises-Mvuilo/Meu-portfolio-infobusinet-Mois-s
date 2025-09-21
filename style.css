@@ -390,39 +390,4 @@ a {
 }
 
 
-/*Mobile responsive 600px*/
-
-@media(min-width: 600px) {
-  .menu ul {
-    display: block;
-    flex-direction: row;
-  }
-
-  section .logo {
-    width: 30%;
-    background-color: red;
-  }
-
-  input {
-    width: 40%;
-  }
-
-  textarea {
-    width: 12rem;
-  }
-
-  .list-table {
-    flex-direction: row;
-    width: 100%;
-    height: 100vh;
-  }
-
-  .audio > h4 {
-    right: -3.5rem;
-  }
-
-  .media > h4 {
-    right: -3.5rem;
-  }
-}
 
