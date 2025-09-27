@@ -41,6 +41,12 @@ section .logo {
   margin: 0 2rem 0 0;
   width: 20%;
   height: 2.5rem;
+  border: none;
+  border-radius: 2rem;
+}
+
+.search::placeholder {
+  padding: 0 0 0 1rem;
 }
 
 .menu {
@@ -179,6 +185,7 @@ figcaption {
   position: relative;
   max-width: 60%;
   margin: 2rem auto;
+  flex-wrap: wrap;
 }
 
 .media {
@@ -399,6 +406,10 @@ a {
     flex-direction: row;
   }
 
+  .block-one {
+    flex-direction: row;
+  }
+
   section .logo {
     width: 30%;
   }
@@ -437,4 +448,6 @@ a {
   top:2.5rem;
 
 }
+
+
 }
