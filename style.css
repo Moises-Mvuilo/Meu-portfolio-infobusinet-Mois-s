@@ -1,3 +1,10 @@
+:root {
+  --color-priimario: blue;
+  --color-secundario: #000000;
+  --font-color: #ffffff;
+  --ouder-color: #ff6600;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +29,18 @@ section .logo {
 
 .logo-block {
   background-color: rgb(195, 195, 195);
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.search {
+  position: absolute;
+  right: 2rem;
+  top: 1.5rem;
+  margin: 0 2rem 0 0;
+  width: 20%;
+  height: 2.5rem;
 }
 
 .menu {
@@ -72,7 +91,8 @@ a {
 .menu ul li:hover {
   background-color: #ff6600;
   cursor: pointer;
-  transform: scale(1.2);
+  transform: scale(1.1);
+  text-decoration: underline;
 }
 
 .menu ul ul {
@@ -92,7 +112,7 @@ a {
 
 /*---------------------------------------------------------------------------------*/
 
-/*CONTEUDO PRINCIPAL*/
+/*CONTÉUDO PRINCIPAL*/
 
 .container {
   max-width: 95%;
@@ -162,7 +182,6 @@ figcaption {
 }
 
 .media {
-  position: relative;
   padding-bottom: 56.25%;
   width: 100%;
 }
@@ -268,6 +287,7 @@ td:nth-child(even) {
   width: 100%;
   height: 80vh;
   background: linear-gradient(40deg, black 10%, blue 50%, black 100%, blue 20%);
+  margin: 3rem 0 0 0;
 }
 
 .form-one {
@@ -319,12 +339,15 @@ form button {
   border-radius: 0.2rem;
   cursor: pointer;
   box-shadow: 0px 1px 15px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0 ease;
+  margin: 2rem 0 0;
 }
 
 .btn:hover {
   background-color: #ef8a47;
   transition: all 0.5s ease-in-out;
   color: white;
+  transform: scale(1.1);
 }
 
 /*--------------------------------------------------------------------------------------------------*/
@@ -404,4 +427,14 @@ a {
   .form-container {
     margin: 5rem 0 5rem 0;
   }
+  .form-container {
+    padding: 4rem 0 0 0;
+  }
+
+  .search  {
+
+
+  top:2.5rem;
+
+}
 }
