@@ -2,7 +2,8 @@
   --color-priimario: blue;
   --color-secundario: #000000;
   --font-color: #ffffff;
-  --ouder-color: #ff6600;
+  --other-color: #ff6600;
+  --bg-color-header: #efefef;
 }
 
 * {
@@ -13,6 +14,7 @@
 
 body {
   background: linear-gradient(40deg, black 10%, blue 50%, black 100%, blue 20%);
+ 
   color: white;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -20,47 +22,42 @@ body {
 
 /*NAVBAR E LOGO*/
 
-section .logo {
-  width: 15%;
-  margin: 0 0 0 2rem;
+.logo {
+  width: 13rem;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e7e7e7;
   padding: 1rem;
-  cursor: pointer;
-}
-
-.logo-block {
-  background-color: rgb(195, 195, 195);
-  display: flex;
-  position: relative;
   box-sizing: border-box;
+  height: 7rem;
+  position: fixed;
+  z-index: 1000;
+  top: -0.5rem;
+ 
 }
 
-.search {
-  position: absolute;
-  right: 2rem;
-  top: 1.5rem;
-  margin: 0 2rem 0 0;
-  width: 20%;
-  height: 2.5rem;
-  border: none;
-  border-radius: 2rem;
+/*Menu mobile*/
+#btn-mobile {
+  display: none;
 }
 
-.search::placeholder {
-  padding: 0 0 0 1rem;
-}
-
-.menu {
-  background-color: #333;
+#nav {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-bottom: 0.1rem solid rgb(100, 98, 98);
 }
 
-.menu ul {
+/*--------------------------------------------------------------------*/
+
+#nav ul {
   list-style-type: none;
-  margin-top: 2%;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,7 +65,7 @@ section .logo {
   gap: 0.1rem;
 }
 
-.menu ul li {
+#nav ul li {
   color: white;
   background-color: #333;
   width: 11rem;
@@ -94,23 +91,23 @@ a {
   font-weight: bold;
 }
 
-.menu ul li:hover {
+#nav ul li:hover {
   background-color: #ff6600;
   cursor: pointer;
   transform: scale(1.1);
   text-decoration: underline;
 }
 
-.menu ul ul {
+#nav ul ul {
   display: none;
   margin: 0;
 }
 
-.menu ul li:hover > ul {
+#nav ul li:hover > ul {
   display: block;
 }
 
-.menu ul ul ul {
+#nav ul ul ul {
   position: absolute;
   margin-left: 10.6rem;
   top: 0;
@@ -129,20 +126,21 @@ h1 {
   text-align: center;
   background-color: #ff6600;
   width: 20rem;
-  margin: 3rem auto;
+  margin: 11rem auto 4rem ;
   border-radius: 0.5rem;
   text-transform: uppercase;
   box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.73);
+ 
 }
 
 .block-one {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
   gap: 5rem;
   background-color: rgb(195, 195, 195);
   padding: 2rem;
+
 }
 
 .letter::first-letter {
@@ -401,18 +399,79 @@ a {
 /*Mobile responsive max-width 768px*/
 
 @media (max-width: 768px) {
-  .menu ul {
+  /*Menu mobile*/
+  #btn-mobile {
+    display: flex;
+    font-size: inherit;
+    border: none;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    gap: .3rem;
+   
+  }
+
+    .hamburger {
+      display: block;
+    border-top: 2px solid;
+    width: 1.4rem;
+ 
+  }
+
+      .hamburger::after,  .hamburger::before {
+      content: '';
+      display: block;
+      width: 1.4rem;
+      height: .1rem;
+      margin-top: .4rem;
+      background-color: currentColor;
+      transition: .3s;
+      position: relative;
+    }
+
+    #nav.active .hamburger {
+      border-top-color: transparent;
+    }
+
+        #nav.active .hamburger::before {
+
+          transform : rotate(135deg);
+      
+    }
+
+       #nav.active .hamburger::after {
+      transform : rotate(-135deg);
+      top: -.5rem;
+    }
+
+
+  nav #menu {
+    display: none;
+    position: absolute;
+    top: 90px;
+    right: 5rem;
+    z-index: 1000;
+    height: calc(100vh -70px);
+    
+   
+  }
+
+  #nav.active #menu {
     display: block;
-    flex-direction: row;
+    background-color: var(--bg-color-header);
+    width: 27%;
+   
   }
 
-  .block-one {
-    flex-direction: row;
+  .header {
+    padding: 4rem;
   }
 
-  section .logo {
-    width: 30%;
+  nav #menu > li{
+    margin: .5rem;
   }
+
+
+  /*-----------------------------------------------*/
 
   input {
     width: 50%;
@@ -442,12 +501,9 @@ a {
     padding: 4rem 0 0 0;
   }
 
-  .search  {
-
-
-  top:2.5rem;
-
-}
+  .block-one {
+    flex-wrap: wrap;
+  }
 
 
 }
