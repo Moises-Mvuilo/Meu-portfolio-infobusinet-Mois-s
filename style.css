@@ -5,18 +5,13 @@
 }
 
 body {
-
-  margin: auto;
   background: linear-gradient(40deg, black 10%, blue 50%, black 100%, blue 20%);
   color: white;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
 
-.container {
-  max-width: 95%;
-  margin: 0 auto;
-}
+/*NAVBAR E LOGO*/
 
 section .logo {
   width: 15%;
@@ -95,6 +90,15 @@ a {
   top: 0;
 }
 
+/*---------------------------------------------------------------------------------*/
+
+/*CONTEUDO PRINCIPAL*/
+
+.container {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
 h1 {
   text-align: center;
   background-color: #ff6600;
@@ -146,6 +150,9 @@ figcaption {
   text-shadow: 0px -2px 0 rgba(0, 0, 0, 0.12);
   border-radius: 1rem;
 }
+
+/*--------------------------------------------------------------------------------------------*/
+
 /*MULTIMÉDIA*/
 
 .media-container {
@@ -178,6 +185,23 @@ audio {
   width: 20rem;
   text-align: center;
 }
+
+.audio > h4 {
+  position: relative;
+  right: -18rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.media > h4 {
+  position: relative;
+  right: -18rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
 
 /*LISTAS E TABELAS*/
 
@@ -235,11 +259,9 @@ td:nth-child(even) {
   background-color: #ff6600;
 }
 
-.video-1 {
-  border-radius: 1rem;
-  margin: 0;
-  width: 31.8rem;
-}
+/*-----------------------------------------------------------------------------------------*/
+
+/*FORMULÁRIO*/
 
 .form-container {
   position: relative;
@@ -249,7 +271,6 @@ td:nth-child(even) {
 }
 
 .form-one {
-  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -306,6 +327,10 @@ form button {
   color: white;
 }
 
+/*--------------------------------------------------------------------------------------------------*/
+
+/*RODAPÉ*/
+
 .container-foot {
   margin: 0.5rem 0 0 0;
   width: 100%;
@@ -341,21 +366,9 @@ a {
   margin: 2rem 0 0 0;
 }
 
-.audio > h4 {
-  position: relative;
-  right: -18rem;
-  text-align: center;
-  margin-top: 3rem;
-}
+/*-----------------------------------------------------------------------------------------------------------*/
 
-.media > h4 {
-  position: relative;
-  right: -18rem;
-  text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-}
-/*Mobile responsive 768px*/
+/*Mobile responsive max-width 768px*/
 
 @media (max-width: 768px) {
   .menu ul {
