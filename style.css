@@ -13,10 +13,10 @@
 }
 
 body {
-  box-sizing: border-box;
+
  width: 100vw;
  height: 100%;
-  margin: auto;
+ ;
   background: linear-gradient(40deg, black 10%, blue 50%, black 100%, blue 20%);
   color: white;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -594,6 +594,10 @@ a {
 
   .block-one {
     flex-wrap: wrap;
+  }
+
+  .header {
+    width: 80%;
   }
 
 }
