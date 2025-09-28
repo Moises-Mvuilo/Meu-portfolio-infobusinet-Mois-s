@@ -14,7 +14,6 @@
 
 body {
   background: linear-gradient(40deg, black 10%, blue 50%, black 100%, blue 20%);
- 
   color: white;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -38,7 +37,6 @@ body {
   position: fixed;
   z-index: 1000;
   top: -0.5rem;
- 
 }
 
 /*Menu mobile*/
@@ -69,7 +67,7 @@ body {
   color: white;
   background-color: #333;
   width: 11rem;
-  border: 1px solid rgb(100, 98, 98);
+  border: 0.1rem solid rgb(100, 98, 98);
   height: 3rem;
   line-height: 3rem;
   text-align: center;
@@ -126,11 +124,10 @@ h1 {
   text-align: center;
   background-color: #ff6600;
   width: 20rem;
-  margin: 11rem auto 4rem ;
+  margin: 11rem auto 4rem;
   border-radius: 0.5rem;
   text-transform: uppercase;
-  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.73);
- 
+  box-shadow: 0 0.1rem 0.3rem 0.2rem rgba(0, 0, 0, 0.73);
 }
 
 .block-one {
@@ -140,13 +137,13 @@ h1 {
   gap: 5rem;
   background-color: rgb(195, 195, 195);
   padding: 2rem;
-
 }
 
 .letter::first-letter {
   font-size: 2rem;
   text-decoration: uppercase;
 }
+
 .principal-text {
   text-align: justify;
   width: 100%;
@@ -156,7 +153,7 @@ h1 {
 
 .photo-img {
   display: block;
-  box-shadow: 0px 1px 3px 1px black;
+  box-shadow: 0 0.1rem 0.3rem 0.1rem black;
   border-radius: 1rem;
   width: 31.8rem;
 }
@@ -171,7 +168,7 @@ figcaption {
   background-color: #ff6600;
   text-align: center;
   font-size: 0.8rem;
-  text-shadow: 0px -2px 0 rgba(0, 0, 0, 0.12);
+  text-shadow: 0 -0.2rem 0 rgba(0, 0, 0, 0.12);
   border-radius: 1rem;
 }
 
@@ -199,7 +196,6 @@ video {
 
 audio {
   width: 100%;
-
   margin-top: 1rem;
   margin-top: 1rem;
 }
@@ -235,7 +231,7 @@ audio {
   align-items: center;
   flex-wrap: wrap;
   margin: 5rem 0 0 0;
-  box-shadow: 0px 2px 20px 6px rgba(0, 0, 0, 0.51);
+  box-shadow: 0 0.2rem 1.4rem 0.6rem rgba(0, 0, 0, 0.51);
   height: 30rem;
 }
 
@@ -252,7 +248,7 @@ ol.list {
 }
 
 ol.list li {
-  padding: 5px 0;
+  padding: 0.5rem 0;
 }
 
 ol.list li:nth-child(odd) {
@@ -265,7 +261,7 @@ ol.list li:nth-child(even) {
 
 th,
 td {
-  border: 1px solid #ddd;
+  border: 0.1rem solid #ddd;
   padding: 0.5rem;
 }
 th {
@@ -310,7 +306,7 @@ input,
 textarea {
   border: none;
   border-radius: 0.2rem;
-  box-shadow: 0px 1px 15px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.1rem 1rem 0.4rem rgba(0, 0, 0, 0.3);
   padding-left: 0.5rem;
 }
 
@@ -343,7 +339,7 @@ form button {
   border: none;
   border-radius: 0.2rem;
   cursor: pointer;
-  box-shadow: 0px 1px 15px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.1rem 1rem 0.4rem rgba(0, 0, 0, 0.3);
   transition: transform 0 ease;
   margin: 2rem 0 0;
 }
@@ -396,80 +392,72 @@ a {
 
 /*-----------------------------------------------------------------------------------------------------------*/
 
-/*Mobile responsive max-width 768px*/
+/*Mobile responsive min-width 576px e max-width 768px*/
 
 @media (max-width: 768px) {
-  /*Menu mobile*/
+  /*Telas menores que 576px*/
   #btn-mobile {
     display: flex;
     font-size: inherit;
     border: none;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     cursor: pointer;
-    gap: .3rem;
-   
+    gap: 0.3rem;
   }
 
-    .hamburger {
-      display: block;
-    border-top: 2px solid;
+  .mobile-menu {
+    display: block;
+    border-top: 0.1rem solid;
     width: 1.4rem;
- 
   }
 
-      .hamburger::after,  .hamburger::before {
-      content: '';
-      display: block;
-      width: 1.4rem;
-      height: .1rem;
-      margin-top: .4rem;
-      background-color: currentColor;
-      transition: .3s;
-      position: relative;
-    }
+  .mobile-menu::after,
+  .mobile-menu::before {
+    content: "";
+    display: block;
+    width: 1.4rem;
+    height: 0.1rem;
+    margin-top: 0.4rem;
+    background-color: currentColor;
+    transition: 0.3s;
+    position: relative;
+  }
 
-    #nav.active .hamburger {
-      border-top-color: transparent;
-    }
+  #nav.active .mobile-menu {
+    border-top-color: transparent;
+  }
 
-        #nav.active .hamburger::before {
+  #nav.active .mobile-menu::before {
+    transform: rotate(135deg);
+  }
 
-          transform : rotate(135deg);
-      
-    }
-
-       #nav.active .hamburger::after {
-      transform : rotate(-135deg);
-      top: -.5rem;
-    }
-
+  #nav.active .mobile-menu::after {
+    transform: rotate(-135deg);
+    top: -0.5rem;
+  }
 
   nav #menu {
     display: none;
     position: absolute;
-    top: 90px;
+    top: 6rem;
     right: 5rem;
     z-index: 1000;
-    height: calc(100vh -70px);
-    
-   
+    height: calc(100vh -5rem);
   }
 
   #nav.active #menu {
     display: block;
     background-color: var(--bg-color-header);
     width: 27%;
-   
   }
 
   .header {
     padding: 4rem;
   }
 
-  nav #menu > li{
-    margin: .5rem;
+  nav #menu > li {
+    margin: 0.5rem;
   }
-
 
   /*-----------------------------------------------*/
 
@@ -504,6 +492,103 @@ a {
   .block-one {
     flex-wrap: wrap;
   }
+}
 
+@media (max-width: 576px) {
+  /*Telas menores que 576px*/
+  #btn-mobile {
+    display: flex;
+    font-size: inherit;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    gap: 0.3rem;
+  }
 
+  .mobile-menu {
+    display: block;
+    border-top: 0.1rem solid;
+    width: 1.4rem;
+  }
+
+  .mobile-menu::after,
+  .mobile-menu::before {
+    content: "";
+    display: block;
+    width: 1.4rem;
+    height: 0.1rem;
+    margin-top: 0.4rem;
+    background-color: currentColor;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #nav.active .mobile-menu {
+    border-top-color: transparent;
+  }
+
+  #nav.active .mobile-menu::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active .mobile-menu::after {
+    transform: rotate(-135deg);
+    top: -0.5rem;
+  }
+
+  nav #menu {
+    display: none;
+    position: absolute;
+    top: 6rem;
+    right: 5rem;
+    z-index: 1000;
+    height: calc(100vh -5rem);
+  }
+
+  #nav.active #menu {
+    display: block;
+    background-color: var(--bg-color-header);
+    width: 27%;
+  }
+
+  .header {
+  }
+
+  nav #menu > li {
+    margin: 0.5rem;
+  }
+
+  /*-----------------------------------------------*/
+
+  input {
+    width: 50%;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  .list-table {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .audio > h4 {
+    right: -3.5rem;
+  }
+
+  .media > h4 {
+    right: -3.5rem;
+  }
+
+  .form-container {
+    margin: 5rem 0 5rem 0;
+  }
+  .form-container {
+    padding: 4rem 0 0 0;
+  }
+
+  .block-one {
+    flex-wrap: wrap;
+  }
 }

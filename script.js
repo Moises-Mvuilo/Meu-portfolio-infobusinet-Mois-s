@@ -8,12 +8,11 @@ function toggleMenu(event) {
   nav.classList.toggle("active");
   const active = nav.classList.contains("active");
   event.currentTarget.setAttribute("aria-expended", "active");
- 
-  
 }
 
 btnMobile.addEventListener("click", toggleMenu);
 btnMobile.addEventListener("touchstart", toggleMenu);
+
 
 /*VALIDAÇÃO DE FORMULÁRIO*/
 
