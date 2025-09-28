@@ -594,10 +594,16 @@ a {
   .container {
     max-width: 100%;
     width: 100vw;
+    margin: auto;
   }
 
   .media-container {
     max-width: 100%;
     width: 100vw;
+    margin: auto;
+  }
+
+  .header {
+    background-color: red;
   }
 }
