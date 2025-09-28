@@ -592,10 +592,12 @@ a {
     flex-wrap: wrap;
   }
   .container {
-    width: 100%;
+    max-width: 100%;
+    width: 100vw;
   }
 
   .media-container {
-    width: 100%;
+    max-width: 100%;
+    width: 100vw;
   }
 }
