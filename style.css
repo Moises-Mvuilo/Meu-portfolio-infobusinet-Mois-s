@@ -591,4 +591,11 @@ a {
   .block-one {
     flex-wrap: wrap;
   }
+  .container {
+    width: 100%;
+  }
+
+  .media-container {
+    width: 100%;
+  }
 }
