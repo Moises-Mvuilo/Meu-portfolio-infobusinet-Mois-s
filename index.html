@@ -3,30 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="description" content="Author: Matukondele Mvuilo Moisés">
     <link
       rel="shortcut icon"
       href="img/Logo_PNG_Marca de Água.png"
       type="image/x-icon"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="hamburgers.css">
-    
     <title>homepage</title>
-
   </head>
   <body>
-
-              <!--CABEÇALHO, LOGOTIPO E LISTAS DE MENU-->
+            <!--CABEÇALHO, LOGOTIPO E LISTAS DE MENU-->
     <header class="header">
    <img src="img/Logo_PNG_Marca de Água.png"
           alt="logotipo"
           class="logo" loading="lazy"
         />      
-
       <nav id="nav">
-
         <button id="btn-mobile">Menu <span class="mobile-menu" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false"></span></button>
-
         <ul id="menu" role="menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="sobre.html">Sobre</a></li>
@@ -49,7 +43,6 @@
         </ul>
       </nav>
     </header>
-
             <!--CONTEÚDO PRINCIPAL-->
     <main class="container">
       <h1>Sobre mim</h1>
@@ -64,7 +57,6 @@
             tecnologia em cada segundo.
           </p>
           <br />
-
           <p>
             Atuar em atividades de projeto, liderança e inovação, impulsionando
             a transformação digital em diversos setores, tais como: Full Stack
@@ -81,7 +73,6 @@
           </figcaption>
         </figure>
       </section>
-
               <!--MULTIMÉDIA-->
     <section class="media-container">
     <section class="media">
@@ -101,7 +92,6 @@
     </audio>
     </section>
     </section>
-	  
       <!--LISTAS E TABELAS-->
       <section class="list-table">
        <section class="center">
@@ -113,9 +103,7 @@
             <li>Segurança electrônica(CCTV)</li>
           </ol>
           </section>
-
           <section class="table-section">
-
             <h3>PREÇOS DE SERVIÇOS</h3>
             <table>
               <thead>
@@ -161,44 +149,41 @@
       </section>
       </section>
     </main>
-
             <!--FORMULÁRIO-->
     <section class="form-container">
         <form id="formulario" action="save.php" method="post" class="form-one"> 
           <section class="form-section">
             <label for="nome">Nome:</label> 
-            <input type="text" id="nome" name="nome"  required> 
+            <input type="text" id="nome" name="Nome"  required> 
             </section>
             
             <section class="form-section">
             <label for="email">Email:</label> 
-            <input type="email" id="email" name="email"  required> 
+            <input type="email" id="email" name="Email" autocomplete="off" required> 
             </section>
 
             <section class="form-section">
-            <label for="mensagem">Mensagem:</label> 
-            <textarea name="mensagem" id="textarea" rows="10" cols="50" maxlength="1024" required></textarea>
+            <label for="message">Mensagem:</label> 
+            <textarea name="textarea" id="message" rows="10" cols="50" maxlength="1024" required></textarea>
             </section>
 
             <section class="form-section">
             <button type="submit" class="btn">Enviar</button> 
             <button type="reset" class="btn">Limpar</button> 
-            </section>
-            
+            </section>   
         </form>
-    </section>
-                <!--RODAPPÉ-->
-    <footer class="container-foot">
-       <section class="social-button">
-                <a href="https://github.com/Moises-Mvuilo"><button class="social"><img src="img/github.svg" alt="github"></button></a>
-                 <a href="https://www.linkedin.com/in/matukondele-mvuilo-187906329/"><button class="social"><img src="img/linkedin.svg" alt="linkedin" ></button class="social"></a>
-                  <a href="https://www.facebook.com/matukondelemvuilo.moises"><button class="social"><img src="img/facebook.svg" alt="facebook"></button></a>
-                  <a href="mailto:moisesmvuilo@gmail.com"><button class="social"><img src="img/mail.svg" alt="mail"></button></a>
         </section>
-        
+                    <!--RODAPPÉ-->
+        <footer class="container-foot">
+          <section class="social-button">
+                    <a href="https://github.com/Moises-Mvuilo"><button class="social"><img src="img/github.svg" alt="github"></button></a>
+                    <a href="https://www.linkedin.com/in/matukondele-mvuilo-187906329/"><button class="social"><img src="img/linkedin.svg" alt="linkedin" ></button class="social"></a>
+                      <a href="https://www.facebook.com/matukondelemvuilo.moises"><button class="social"><img src="img/facebook.svg" alt="facebook"></button></a>
+                      <a href="mailto:moisesmvuilo@gmail.com"><button class="social"><img src="img/mail.svg" alt="mail"></button></a>
+        </section>
+   
         <p class="final-text">&copy 2025, by Engº. Matukondele Mvuilo Moisés <br> Todos direitos reservados</p>
     </footer>
-
     <script src="script.js" defer></script>
   </body>
 </html>

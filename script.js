@@ -1,4 +1,4 @@
-/*MENU MOBILE*/
+//MENU MOBILE
 
 const btnMobile = document.getElementById("btn-mobile");
 
@@ -10,11 +10,11 @@ function toggleMenu(event) {
   event.currentTarget.setAttribute("aria-expended", "active");
 }
 
+
 btnMobile.addEventListener("click", toggleMenu);
 btnMobile.addEventListener("touchstart", toggleMenu);
 
-
-/*VALIDAÇÃO DE FORMULÁRIO*/
+//VALIDAÇÃO DE FORMULÁRIO
 
 document
   .getElementById("formulario")
@@ -22,7 +22,7 @@ document
     var form = event.target;
     var nome = form.nome.value.trim();
     var email = form.email.value.trim();
-    var textarea = textarea.value.trim();
+    var textarea = message.value.trim();
 
     if (nome === "") {
       alert("O campo Nome é obrigatório.");
@@ -30,7 +30,7 @@ document
     } else if (!email.includes("@")) {
       alert("Por favor, insira um email válido.");
       event.preventDefault();
-    } else if (textarea === "") {
+    } else if (message === "") {
       alert("Partilha o que tu pensas para melhoramos");
       event.preventDefault();
     }

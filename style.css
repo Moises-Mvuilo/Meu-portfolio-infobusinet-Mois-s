@@ -1,5 +1,5 @@
 :root {
-  --color-priimario: blue;
+  --color-primario: blue;
   --color-secundario: #000000;
   --font-color: #ffffff;
   --other-color: #ff6600;
@@ -13,10 +13,8 @@
 }
 
 body {
-
- width: 100vw;
- height: 100%;
- ;
+  width: 100vw;
+  height: 100%;
   background: linear-gradient(40deg, black 10%, blue 50%, black 100%, blue 20%);
   color: white;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -85,7 +83,7 @@ body {
 }
 
 a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   font-size: 1.1rem;
   text-transform: uppercase;
@@ -94,7 +92,7 @@ a {
 }
 
 #nav ul li:hover {
-  background-color: #ff6600;
+  background-color: var(--other-color);
   cursor: pointer;
   transform: scale(1.1);
   text-decoration: underline;
@@ -237,6 +235,7 @@ audio {
   margin: 5rem 0 0 0;
   box-shadow: 0 0.2rem 1.4rem 0.6rem rgba(0, 0, 0, 0.51);
   height: 30rem;
+  padding: 1rem 0 1rem 0;
 }
 
 .list-table h3 {
@@ -396,6 +395,50 @@ a {
 
 /*-----------------------------------------------------------------------------------------------------------*/
 
+/*PÁGINA SOBRE*/
+
+.container {
+  width: 90%;
+
+  margin: 10rem auto;
+}
+.history-text {
+  text-align: justify;
+  font-size: 1.5rem;
+  border-bottom: 0.1rem solid gray;
+}
+
+.picture {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 2rem;
+  margin: 3rem 0 -7rem 0;
+  padding: 2rem;
+  background-color: var(--bg-color-header);
+
+  border-bottom-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+}
+
+.picture-1 {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.3);
+}
+
+.picture
+.description {
+  color: var(--color-secundario);
+  text-align: center;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.header-picture {
+  text-align: center;
+  margin: 2rem 0 -2rem 0;
+}
+
 /*Mobile responsive min-width 576px e max-width 768px*/
 
 @media (max-width: 768px) {
@@ -404,7 +447,7 @@ a {
     display: flex;
     font-size: inherit;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0;
     cursor: pointer;
     gap: 0.3rem;
   }
@@ -487,14 +530,33 @@ a {
   }
 
   .form-container {
-    margin: 5rem 0 5rem 0;
+    height: 100%;
   }
-  .form-container {
-    padding: 4rem 0 0 0;
+
+  .form-one {
+    padding: 3rem 2rem 5rem 2rem;
   }
 
   .block-one {
     flex-wrap: wrap;
+  }
+
+  .list-table {
+    padding: 2rem;
+    height: 100%;
+  }
+
+  .table-section > h3 {
+    margin: 3rem 0 1rem 0;
+  }
+
+  .picture {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+
+  .picture-1 {
+    width: 100%;
   }
 }
 
@@ -504,7 +566,7 @@ a {
     display: flex;
     font-size: inherit;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0;
     cursor: pointer;
     gap: 0.3rem;
   }
@@ -578,26 +640,30 @@ a {
   }
 
   .audio > h4 {
-    right: -3.5rem;
+    right: 0.1rem;
   }
 
   .media > h4 {
-    right: -3.5rem;
+    right: 0.1rem;
   }
 
-  .form-container {
-    margin: 5rem 0 5rem 0;
-  }
-  .form-container {
-    padding: 4rem 0 0 0;
-  }
-
-  .block-one {
-    flex-wrap: wrap;
+  h1 {
+    width: 10rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
   }
 
-  .header {
-    width: 80%;
+  .list-table {
+    padding: 2rem;
+    height: 100%;
   }
 
+    .picture {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+
+  .picture-1 {
+    width: 100%;
+  }
 }
