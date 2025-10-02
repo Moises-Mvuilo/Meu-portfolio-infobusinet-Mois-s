@@ -47,6 +47,8 @@ body {
 }
 
 #nav {
+  position: sticky;
+  top: 0;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -75,7 +77,7 @@ body {
   text-align: center;
   float: left;
   background-color: #090909;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   position: relative;
   font-weight: bold;
@@ -301,26 +303,27 @@ td:nth-child(even) {
   flex-direction: column;
   height: 100%;
 }
-form label {
+.form-one label {
   display: block;
 }
 
-input,
+.all-input,
 textarea {
   border: none;
   border-radius: 0.2rem;
   box-shadow: 0 0.1rem 1rem 0.4rem rgba(0, 0, 0, 0.3);
   padding-left: 0.5rem;
+  outline: 0;
 }
 
-input {
+.all-input {
   width: 100%;
 }
 
 .form-section {
   margin: 0.5rem 0 0 0;
 }
-.form-section input {
+.form-section .all-input {
   width: 24rem;
   height: 2.5rem;
 }
@@ -330,12 +333,12 @@ input {
   height: 15rem;
 }
 
-input:focus,
+.all-input:focus,
 textarea:focus {
   background-color: rgb(228, 225, 225);
 }
 
-form button {
+.form-one .btn {
   width: 5rem;
   height: 2rem;
   font-size: inherit;
@@ -376,8 +379,8 @@ form button {
   margin: 4rem 0 0 0;
   background-color: transparent;
   border-radius: 100%;
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   border: none;
   cursor: pointer;
 }
@@ -388,7 +391,7 @@ a {
 
 .final-text {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   color: black;
   margin: 2rem 0 0 0;
 }
@@ -399,9 +402,9 @@ a {
 
 .container {
   width: 90%;
-
   margin: 10rem auto;
 }
+
 .history-text {
   text-align: justify;
   font-size: 1.5rem;
@@ -413,12 +416,12 @@ a {
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
   gap: 2rem;
-  margin: 3rem 0 -7rem 0;
+  margin: 3rem auto -7rem;
   padding: 2rem;
   background-color: var(--bg-color-header);
-
   border-bottom-left-radius: 3rem;
   border-top-right-radius: 3rem;
+  width: 80%;
 }
 
 .picture-1 {
@@ -427,8 +430,7 @@ a {
   box-shadow: 0 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.3);
 }
 
-.picture
-.description {
+.picture .description {
   color: var(--color-secundario);
   text-align: center;
   padding: 0.5rem 0 0.5rem 0;
@@ -438,11 +440,106 @@ a {
   text-align: center;
   margin: 2rem 0 -2rem 0;
 }
+/*--------------------------------------------------------------------------------------*/
+
+/*PÁGINA SERVIÇOS*/
+
+/*---------------------------------------------------------------------------------------*/
+
+/*PÁGINA GALERIA*/
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  max-width: 85%;
+  margin: 10rem auto 4rem auto;
+  gap: 2rem;
+}
+
+.image-section {
+  width: 100%;
+  height: auto;
+  border: 0.1rem solid var(--bg-color-header);
+  border-top-left-radius: 2rem;
+}
+/*----------------------------------------------------------------------------------------*/
+
+/*PÁGINA CONTACTO*/
+
+.contact-container {
+  max-width: 90%;
+  margin: 10rem auto;
+}
+
+.form-and-picture {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem;
+  background-color: rgb(207, 226, 245);
+}
+
+.nome,
+.mail,
+.phone {
+  width: 26rem;
+  height: 2.5rem;
+  font-family: inherit;
+  border-bottom: 1px solid gray;
+  border: none;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  border-bottom: 1px solid gray;
+}
+
+.send {
+  width: 6em;
+  height: 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  transition: background-color 3s ease;
+  font-family: inherit;
+}
+
+.send:hover {
+  background-color: var(--color-primario);
+  transform: scale(1.1);
+  color: var(--bg-color-header);
+}
+
+.receive-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+
+span {
+  color: var(--color-secundario);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.map {
+  margin: 3rem auto -8rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.programming {
+  border-radius: 1rem;
+}
+
+/*----------------------------------------------------------------------------------------*/
 
 /*Mobile responsive min-width 576px e max-width 768px*/
 
 @media (max-width: 768px) {
-  /*Telas menores que 576px*/
+  /*Telas menores que 768px*/
   #btn-mobile {
     display: flex;
     font-size: inherit;
@@ -450,6 +547,7 @@ a {
     padding: 0.5rem 0;
     cursor: pointer;
     gap: 0.3rem;
+    background-color: #e7e7e7;
   }
 
   .mobile-menu {
@@ -558,6 +656,24 @@ a {
   .picture-1 {
     width: 100%;
   }
+
+  .form-and-picture {
+    flex-direction: column;
+  }
+  .programming {
+    width: 100%;
+  }
+
+  .receive-form {
+    padding-top: 2rem;
+  }
+  .gallery-container {
+    grid-template-columns: 1fr;
+  }
+
+  span {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 576px) {
@@ -658,12 +774,27 @@ a {
     height: 100%;
   }
 
-    .picture {
+  .picture {
     grid-template-columns: auto;
     grid-template-rows: auto;
   }
 
   .picture-1 {
     width: 100%;
+  }
+
+  .form-and-picture {
+    flex-direction: column;
+  }
+  .programming {
+    width: 100%;
+  }
+
+  .gallery-container {
+    grid-template-columns: 1fr;
+  }
+
+    span {
+    font-size: 1.5rem;
   }
 }

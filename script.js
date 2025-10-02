@@ -10,15 +10,12 @@ function toggleMenu(event) {
   event.currentTarget.setAttribute("aria-expended", "active");
 }
 
-
 btnMobile.addEventListener("click", toggleMenu);
 btnMobile.addEventListener("touchstart", toggleMenu);
 
-//VALIDAÇÃO DE FORMULÁRIO
+//VALIDAÇÃO DE FORMULÁRIO HOMEPAGE
 
-document
-  .getElementById("formulario")
-  .addEventListener("submit", function (event) {
+document.getElementById("formulario").addEventListener('submit', function (event) {
     var form = event.target;
     var nome = form.nome.value.trim();
     var email = form.email.value.trim();
@@ -30,8 +27,11 @@ document
     } else if (!email.includes("@")) {
       alert("Por favor, insira um email válido.");
       event.preventDefault();
-    } else if (message === "") {
+    } else if (textarea === "") {
       alert("Partilha o que tu pensas para melhoramos");
       event.preventDefault();
     }
-  });
+  }); 
+
+
+

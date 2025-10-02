@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="description" content="Author: Matukondele Mvuilo Moisés">
+    <link
+      rel="shortcut icon"
+      href="img/Logo_PNG_Marca de Água.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>homepage</title>
+  </head>
+  <body>
+            <!--CABEÇALHO, LOGOTIPO E LISTAS DE MENU-->
+    <header class="header">
+   <img src="img/Logo_PNG_Marca de Água.png"
+          alt="logotipo"
+          class="logo" loading="lazy"
+        />      
+      <nav id="nav">
+        <button id="btn-mobile"><span class="mobile-menu" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false"></span></button>
+        <ul id="menu" role="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li>
+            <a href="servicos.html">Serviços</a>
+            <ul>
+              <li>
+                Desenvolvimento Web
+                <ul>
+                  <li>Front</li>
+                  <li>Back</li>
+                  <li>Full</li>
+                </ul>
+              </li>
+              <li>Redes</li>
+              <li>Servidores</li>
+            </ul>
+          </li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--FORMULÁRIO E MAPA-->
+    <main class="contact-container">
+      <section class="form-and-picture">
+        
+        <img src="img/programming.jpg" alt="programando" loading="lazy" class="programming">
+        <form action="/sendform.php" method="post" id="form-validate" class="receive-form">
+          <span>CONTACTA-NOS</span>
+          <input type="nome" id="" placeholder="Nome"  class="nome"  maxlength="35" pattern="[A-Za z\s]+">
+          
+          <input type="email" name="" id="" placeholder="E-mail" class="mail" autocomplete="off">
+
+          <input type="tel" id="" placeholder="Telefone" class="phone" maxlength="15"  pattern="\d{9}" title="O formato deve ser 915-143-745">
+          
+          <button type="submit" class="send">Enviar</button>
+        </form>
+      </section>
+
+      <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3110.1482187402175!2d-9.306216324256766!3d38.78323637174873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ece2080592b99%3A0xc1682f0a19aed295!2sAv.%2025%20de%20Abril%2096%2C%202735-630%20Agualva-Cac%C3%A9m!5e0!3m2!1spt-PT!2spt!4v1759355895880!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+    </main>
+
+   
+                    <!--RODAPPÉ-->
+        <footer class="container-foot">
+          <section class="social-button">
+                    <a href="https://github.com/Moises-Mvuilo"><button class="social"><img src="img/github.svg" alt="github"></button></a>
+                    <a href="https://www.linkedin.com/in/matukondele-mvuilo-187906329/"><button class="social"><img src="img/linkedin.svg" alt="linkedin" ></button class="social"></a>
+                      <a href="https://www.facebook.com/matukondelemvuilo.moises"><button class="social"><img src="img/facebook.svg" alt="facebook"></button></a>
+                      <a href="mailto:moisesmvuilo@gmail.com"><button class="social"><img src="img/mail.svg" alt="mail"></button></a>
+        </section>
+   
+        <p class="final-text">&copy 2025, by Engº. Matukondele Mvuilo Moisés <br> Todos direitos reservados</p>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>
