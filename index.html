@@ -3,15 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <meta name="description" content="Author: Matukondele Mvuilo Moisés">
-    <link
+    <meta name="description" content="Criação de homepage parte 1 & 2">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="Author" content="Matukondele Mvuilo Moisés">
+    <title>homepage</title>
+  </head>
+   <link
       rel="shortcut icon"
       href="img/Logo_PNG_Marca de Água.png"
       type="image/x-icon"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>homepage</title>
-  </head>
   <body>
             <!--CABEÇALHO, LOGOTIPO E LISTAS DE MENU-->
     <header class="header">
@@ -44,6 +46,7 @@
         </ul>
       </nav>
     </header>
+  
             <!--CONTEÚDO PRINCIPAL-->
     <main class="container">
       <h1>Sobre mim</h1>
@@ -68,7 +71,7 @@
 
         <figure class="photo-img">
           <img src="img/photo.jpg" alt="foto" class="photo-img-1" loading="lazy"/>
-          <figcaption>
+          <figcaption class="fig-text">
             Engº. Matukondele M. Moisés <br />Licenciado em Engenharia
             Informática
           </figcaption>
@@ -155,22 +158,22 @@
         <form id="formulario" action="save.php" method="post" class="form-one"> 
           <section class="form-section">
             <label for="nome">Nome:</label> 
-            <input type="text" id="nome" name="Nome"  required class="all-input"> 
+            <input type="text" id="nome" name="Nome"  required class="all-input input"> 
             </section>
             
             <section class="form-section">
             <label for="email">Email:</label> 
-            <input type="email" id="email" name="Email"  required class="all-input" autocomplete="off"> 
+            <input type="email" id="email" name="Email"  required class="all-input input" autocomplete="off"> 
             </section>
 
             <section class="form-section">
             <label for="message">Mensagem:</label> 
-            <textarea name="textarea" id="message" rows="10" cols="50" maxlength="1024" required></textarea>
+            <textarea name="textarea" id="message" rows="10" cols="50" maxlength="1024" required class="input"></textarea>
             </section>
 
             <section class="form-section">
-            <button type="submit" class="btn" >Enviar</button> 
-            <button type="reset" class="btn">Limpar</button> 
+            <button type="submit" id="btn" >Enviar</button> 
+            <button type="reset" id="btn">Limpar</button> 
             </section>   
         </form>
         </section>

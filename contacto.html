@@ -52,11 +52,11 @@
         <img src="img/programming.jpg" alt="programando" loading="lazy" class="programming">
         <form action="/sendform.php" method="post" id="form-validate" class="receive-form">
           <span>CONTACTA-NOS</span>
-          <input type="nome" id="" placeholder="Nome"  class="nome"  maxlength="35" pattern="[A-Za z\s]+">
+          <input type="nome" id="nome1" placeholder="Nome"  class="nome"  maxlength="35" pattern="[A-Za z\s]+" required>
           
-          <input type="email" name="" id="" placeholder="E-mail" class="mail" autocomplete="off">
+          <input type="email" name="email1" id="" placeholder="E-mail" class="mail" autocomplete="off" required>
 
-          <input type="tel" id="" placeholder="Telefone" class="phone" maxlength="15"  pattern="\d{9}" title="O formato deve ser 915-143-745">
+          <input type="tel" id="tel1" placeholder="Telefone" class="phone" required maxlength="15"  pattern="\d{9}" title="O formato deve ser 915-143-745">
           
           <button type="submit" class="send">Enviar</button>
         </form>

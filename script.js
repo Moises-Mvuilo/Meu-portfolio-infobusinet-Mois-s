@@ -15,7 +15,9 @@ btnMobile.addEventListener("touchstart", toggleMenu);
 
 //VALIDAÇÃO DE FORMULÁRIO HOMEPAGE
 
-document.getElementById("formulario").addEventListener('submit', function (event) {
+document
+  .getElementById("formulario")
+  .addEventListener("submit", function (event) {
     var form = event.target;
     var nome = form.nome.value.trim();
     var email = form.email.value.trim();
@@ -31,7 +33,23 @@ document.getElementById("formulario").addEventListener('submit', function (event
       alert("Partilha o que tu pensas para melhoramos");
       event.preventDefault();
     }
-  }); 
+  });
 
+//VALIDAÇÃO DE FORMULÁRIO CONTACTO
 
+document
+  .getElementById("contact-formulario")
+  .addEventListener("submit", function (event) {
+    var form = e.target;
+    var nomeContact = nome1.value.trim();
+    var emailContact = email1.value.trim();
+    var telContact = tel1.value();
 
+    if (nome1 === "") {
+      e.preventDefault();
+    } else if (!email1.includes("@")) {
+      e.preventDefault();
+    } else if (!tel1.checkValidity) {
+      e.preventDefault();
+    }
+  });
